@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class ContentMatcher {
+    public static void main(String[] args) {
+        // Initialize the HashMap with some entries
+        Map<Integer, String> regions = new HashMap<>();
+        regions.put(0, "National Capital Region (NCR)");
+        regions.put(1, "Calabarzon (Region IV-A)");
+        regions.put(2, "Central Luzon (Region III)");
+
+        // Input to match
+        String input = "NCR";
+
+        // Perform the matching
+        boolean isMatch = false;
+        int matchedIndex = -1;
+
+        for (Map.Entry<Integer, String> entry : regions.entrySet()) {
+            if (entry.getValue().contains(input)) {
+                isMatch = true;
+                matchedIndex = entry.getKey();
+                break; // Exit loop on first match
+            }
+        }
+
+        // Output the result
+        if (isMatch) {
+            System.out.println("Match found! Index: " + matchedIndex);
+        } else {
+            System.out.println("No match found.");
+        }
+    }
+}
+

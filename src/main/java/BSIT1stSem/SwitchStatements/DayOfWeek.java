@@ -1,4 +1,4 @@
-package BSIT1stSem.Switch;
+package BSIT1stSem.SwitchStatements;
 
 import java.util.*;
 

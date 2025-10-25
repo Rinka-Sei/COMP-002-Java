@@ -17,8 +17,7 @@ public class AverageFinder {
 
         3. Dynamic Array Size: Allow the user to specify how many numbers they want to input rather than hardcoding it to 5.
         or create a counter in a while loop that will keep on asking the user until it breaks from user specific input similar to ctrl+c
-         */         
-        
+         */
         Scanner sc = new Scanner(System.in);
         double numbers[] = new double[5];
         double average, total;

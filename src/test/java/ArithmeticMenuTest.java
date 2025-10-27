@@ -9,6 +9,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ArithmeticMenuTest {
 
+    private String getExpectedOutput(String result) {
+        return String.join(System.lineSeparator(),
+                "",
+                "--- Arithmetic Menu ---",
+                "1. Add",
+                "2. Subtract",
+                "3. Multiply",
+                "4. Divide") + System.lineSeparator() +
+                "Input your option (1-4): " +
+                "Input the first number: " +
+                "Input the second number: " +
+                result + System.lineSeparator();
+    }
+
     @Test
     public void testMain_Addition() {
         String input = "1\n10\n5";
@@ -20,7 +34,7 @@ public class ArithmeticMenuTest {
 
         ArithmeticMenu.main(new String[]{});
 
-        String expectedOutput = "\n--- Arithmetic Menu ---\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\nInput your option (1-4): " + "Input the first number: " + "Input the second number: " + "Result of Addition: 15.0" + System.lineSeparator();
+        String expectedOutput = getExpectedOutput("Result of Addition: 15.0");
         assertEquals(expectedOutput, outContent.toString());
     }
 
@@ -35,7 +49,7 @@ public class ArithmeticMenuTest {
 
         ArithmeticMenu.main(new String[]{});
 
-        String expectedOutput = "\n--- Arithmetic Menu ---\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\nInput your option (1-4): " + "Input the first number: " + "Input the second number: " + "Error: Division by zero is not allowed." + System.lineSeparator();
+        String expectedOutput = getExpectedOutput("Error: Division by zero is not allowed.");
         assertEquals(expectedOutput, outContent.toString());
     }
 }

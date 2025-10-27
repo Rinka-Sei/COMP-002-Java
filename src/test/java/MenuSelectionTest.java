@@ -20,7 +20,7 @@ public class MenuSelectionTest {
 
         MenuSelection.main(new String[]{});
 
-        String expectedOutput = "\n--- Menu ---\n1. Burger\n2. Fries\n3. Drink\n4. Exit\nInput your choice (1–4): You selected: Burger" + System.lineSeparator();
+        String expectedOutput = "\n--- Menu ---\n1. Burger\n2. Fries\n3. Drink\n4. Exit\nInput your choice (1-4): You selected: Burger" + System.lineSeparator();
         assertEquals(expectedOutput, outContent.toString());
     }
 
@@ -35,7 +35,7 @@ public class MenuSelectionTest {
 
         MenuSelection.main(new String[]{});
 
-        String expectedOutput = "\n--- Menu ---\n1. Burger\n2. Fries\n3. Drink\n4. Exit\nInput your choice (1–4): You selected: Invalid choice. Please select 1, 2, 3, or 4." + System.lineSeparator();
+        String expectedOutput = "\n--- Menu ---\n1. Burger\n2. Fries\n3. Drink\n4. Exit\nInput your choice (1-4): You selected: Invalid choice. Please select 1, 2, 3, or 4." + System.lineSeparator();
         assertEquals(expectedOutput, outContent.toString());
     }
 }

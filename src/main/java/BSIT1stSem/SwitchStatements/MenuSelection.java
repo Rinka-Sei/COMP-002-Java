@@ -29,7 +29,7 @@ public class MenuSelection {
             System.out.println("2. Fries");
             System.out.println("3. Drink");
             System.out.println("4. Exit");
-            System.out.print("Input your choice (1–4): ");
+            System.out.print("Input your choice (1-4): ");
 
             int choice = scanner.nextInt();
             String selectedItem;

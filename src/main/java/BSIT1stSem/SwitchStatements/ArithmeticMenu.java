@@ -1,9 +1,29 @@
+/**
+ * This class provides a simple arithmetic menu that allows users to perform basic calculations.
+ */
 package BSIT1stSem.SwitchStatements;
 
 import java.util.*;
 
+/**
+ * The ArithmeticMenu class presents a user with a menu of arithmetic operations:
+ * Addition, Subtraction, Multiplication, and Division. The user selects an option
+ * and provides two numbers, and the program performs the chosen calculation.
+ * This class demonstrates the use of a switch statement to handle menu selections.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class ArithmeticMenu {
 
+    /**
+     * The main entry point of the program.
+     * It displays the menu, takes user input for the desired operation and two numbers,
+     * performs the calculation using a switch statement, and prints the result.
+     * It also includes error handling for invalid options and division by zero.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             double num1, num2, result = 0;

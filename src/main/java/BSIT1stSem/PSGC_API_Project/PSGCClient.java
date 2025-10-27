@@ -1,3 +1,7 @@
+/**
+ * This class is a client for the PSGC (Philippine Standard Geographic Code) API.
+ * It allows users to retrieve and display geographic information about the Philippines.
+ */
 package BSIT1stSem.PSGC_API_Project;
 
 import com.google.gson.Gson;
@@ -13,8 +17,24 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * The PSGCClient class is a command-line application that interacts with the PSGC API
+ * to fetch and display information about provinces, cities/municipalities, and barangays
+ * in the Philippines. It demonstrates how to make HTTP requests, parse JSON data,
+ * and display the information in a user-friendly format.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class PSGCClient {
 
+    /**
+     * The main entry point of the program.
+     * It prompts the user to enter a province/region name, fetches the corresponding
+     * cities/municipalities, and then allows the user to select a city to view its barangays.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -55,6 +75,12 @@ public class PSGCClient {
         scanner.close();
     }
 
+    /**
+     * Fetches and displays a list of municipalities for a given province.
+     *
+     * @param url The API endpoint URL to fetch the municipalities from.
+     * @param scanner The Scanner object to read user input.
+     */
     private static void fetchMunicipalities(String url, Scanner scanner) {
         List<City> cities = null;
 
@@ -121,6 +147,12 @@ public class PSGCClient {
         }
     }
 
+    /**
+     * Prints the header for the city table and calculates the required column widths.
+     *
+     * @param cities A list of City objects to be displayed.
+     * @return An array of two integers representing the calculated column widths for the city name and code.
+     */
     public static int[] printCityTableHeader(List<City> cities) {
         // Determine the maximum length of city names
         int maxCityNameLength = cities.stream()
@@ -142,6 +174,12 @@ public class PSGCClient {
 
     }
 
+    /**
+     * Fetches and displays a list of barangays for a given city.
+     *
+     * @param cityCode The code of the city to fetch barangays for.
+     * @param city The City object representing the selected city.
+     */
     private static void fetchBarangays(String cityCode, City city) {
         String url = "https://psgc.cloud/api/cities-municipalities/" + cityCode + "/barangays";
         try {
@@ -173,6 +211,11 @@ public class PSGCClient {
         }
     }
 
+    /**
+     * Prints a formatted table of barangays.
+     *
+     * @param barangays A list of Barangay objects to be displayed.
+     */
     private static void printBarangayTable(List<Barangay> barangays) {
         // Determine the maximum length of barangay names
         int maxBarangayNameLength = barangays.stream()

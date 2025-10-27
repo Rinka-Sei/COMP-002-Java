@@ -1,9 +1,28 @@
+/**
+ * This class implements a simple calculator that performs basic arithmetic operations.
+ */
 package BSIT1stSem.SwitchStatements;
 
 import java.util.*;
 
+/**
+ * The SimpleCalculator class allows a user to input two numbers and an operator (+, -, *, /).
+ * It then performs the specified calculation and displays the result. This class demonstrates
+ * how a switch statement can be used to handle different operations based on a character input.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class SimpleCalculator {
 
+    /**
+     * The main entry point of the program.
+     * It prompts the user for two numbers and an operator, then uses a switch statement
+     * to perform the calculation. It includes error handling for invalid operators and
+     * division by zero.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Input first number: ");

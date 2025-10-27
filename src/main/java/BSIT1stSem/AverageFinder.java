@@ -1,9 +1,27 @@
+/**
+ * This class calculates the average of five numbers provided by the user.
+ */
 package BSIT1stSem;
 
 import java.util.*;
 
+/**
+ * The AverageFinder class is a simple Java program that prompts the user to enter
+ * five numbers. It then calculates and displays the average of these numbers.
+ * This class demonstrates basic array handling and looping in Java.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class AverageFinder {
 
+    /**
+     * The main entry point of the program.
+     * It takes five numbers as input from the user, stores them in an array,
+     * calculates the sum and average, and prints the result.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
 
         /*

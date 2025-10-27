@@ -1,9 +1,28 @@
+/**
+ * This class maps a user-provided month number (1-12) to the corresponding month name.
+ */
 package BSIT1stSem.SwitchStatements;
 
 import java.util.*;
 
+/**
+ * The MonthName class is a simple Java program that prompts the user to enter a number
+ * between 1 and 12. It then uses a switch statement to determine the corresponding
+ * month name and prints the result. This class is a straightforward example of
+ * using a switch statement for integer-to-string mapping.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class MonthName {
 
+    /**
+     * The main entry point of the program.
+     * It takes a month number as input from the user and uses a switch statement
+     * to find the corresponding month name.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Input month number (1–12): ");

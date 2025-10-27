@@ -1,9 +1,27 @@
+/**
+ * This class calculates the sum of ten numbers provided by the user.
+ */
 package BSIT1stSem.Seatworks;
 
 import java.util.*;
 
+/**
+ * The Sumof10 class is a simple Java program that prompts the user to enter ten numbers.
+ * It then calculates and displays the sum of these numbers. This class demonstrates
+ * basic array handling and looping in Java.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class Sumof10 {
 
+    /**
+     * The main entry point of the program.
+     * It takes ten numbers as input from the user, stores them in an array,
+     * calculates the sum, and prints the result.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double num[] = new double[10];

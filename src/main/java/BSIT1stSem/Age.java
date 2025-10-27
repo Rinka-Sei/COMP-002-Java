@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * This class demonstrates basic input and output in Java, calculating the user's birth year.
  */
 package BSIT1stSem;
 
 import java.util.*;
 
+/**
+ * The Age class prompts the user for their name and age, then calculates their birth year
+ * and provides a message based on their age. This serves as a simple example of
+ * user interaction and basic conditional logic in Java.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class Age {
 
+    /**
+     * The main entry point of the program.
+     * It takes user input for name and age, and then computes the birth year.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

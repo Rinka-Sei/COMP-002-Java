@@ -1,15 +1,29 @@
+/**
+ * This class contains a series of laboratory exercises covering basic arithmetic operations,
+ * exponentiation, averaging, and unit conversion.
+ */
 package BSIT1stSem.Lab;
 
 import java.util.*;
 
 /**
+ * The Oct_08_2025 class is a collection of small programming exercises. It is structured
+ * as a single main method that executes several distinct tasks in sequence. These tasks
+ * include calculating the sum, difference, product, and quotient of three numbers,
+ * finding the cube of a number, computing the average of fifteen numbers, and converting
+ * degrees to revolutions.
  *
- * @author mj
- *
- *
+ * @author Jules
+ * @version 1.0
  */
 public class Oct_08_2025 {
 
+    /**
+     * The main entry point of the program.
+     * This method runs through a series of four distinct programming exercises.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {
             double num1, num2, num3, degrees, revolutions, number1, number2, number3, number4, number5, number6, number7, number8, number9, number10, number11, number12, number13, number14, number15, cube, sum, average;

@@ -1,9 +1,27 @@
+/**
+ * This class converts a 3-letter month abbreviation into the full month name.
+ */
 package BSIT1stSem.SwitchStatements;
 
 import java.util.*;
 
+/**
+ * The StringMonthAbbreviation class prompts the user to enter a three-letter month
+ * abbreviation (e.g., "Jan", "Feb"). It then uses a switch statement to find the
+ * corresponding full month name. The input is standardized to be case-insensitive.
+ *
+ * @author Jules
+ * @version 1.0
+ */
 public class StringMonthAbbreviation {
 
+    /**
+     * The main entry point of the program.
+     * It takes a month abbreviation as input, standardizes its format, and then
+     * uses a switch statement to determine the full month name.
+     *
+     * @param args The command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Input a month abbreviation (e.g., 'Jan', 'Feb'): ");

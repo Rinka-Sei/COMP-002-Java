@@ -12,3 +12,4 @@ TODO:
 
         # Improvement
 5. Create an interactive program using Jline or PicoCLI
+6. Add feature to use Code in Querying Results, being able to take 3 kinds of input, Direct Name or Misspelled Name, Index list number, PSGC Code

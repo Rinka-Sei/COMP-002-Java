@@ -1,6 +1,6 @@
 package BSIT1stSem.IfStatements;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class AgeCategory {
 
@@ -15,9 +15,9 @@ public class AgeCategory {
             } else if (age < 13) {
                 category = "**Child** (<13)";
             } else if (age <= 19) { // 13-19
-                category = "**Teen** (13–19)";
+                category = "**Teen** (13-19)";
             } else if (age <= 59) { // 20-59
-                category = "**Adult** (20–59)";
+                category = "**Adult** (20-59)";
             } else { // 60+
                 category = "**Senior** (60+)";
             }
